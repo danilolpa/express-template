@@ -1,0 +1,30 @@
+{
+  "name": "express-api-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./bin/server.js --exec babel-node",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "start": "pm2 start ./bin/server.js"
+  },
+  "author": "Danilo Almeida <danilolpa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.15",
+    "node-restful": "^0.2.6",
+    "nodemon": "^1.17.3",
+    "pm2": "^2.10.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "prettier": "1.12.1"
+  }
+}
